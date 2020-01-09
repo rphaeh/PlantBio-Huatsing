@@ -1,0 +1,62 @@
+% !TEX program = xelatex
+\documentclass[UTF8, a4paper]{book}
+% 宏包区
+\usepackage{ctex} % 主要使用中文
+\usepackage{xeCJK}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{hyperref}
+\usepackage{ulem}
+\usepackage{adforn}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\newcommand{\PreserveBackslash}[1]{\let\temp=\\#1\let\\=\temp}
+\newcolumntype{C}[1]{>{\PreserveBackslash\centering}p{#1}}
+\newcolumntype{R}[1]{>{\PreserveBackslash\raggedleft}p{#1}}
+\newcolumntype{L}[1]{>{\PreserveBackslash\raggedright}p{#1}}
+\usepackage{color}
+
+% 字体区
+\setCJKmainfont[BoldFont={Adobe Heiti Std}, ItalicFont={Adobe Kaiti Std}]{Adobe Song Std}
+\setCJKsansfont{Adobe Heiti Std}
+\setCJKmonofont{Adobe Kaiti Std}
+\setmainfont{Times New Roman}
+\setsansfont{Arial}
+\setmonofont{Courier New}
+% 元数据区
+\hypersetup{pdftitle={PlantBio-Huatsing},pdfauthor={Fangmaoer}}
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+\everymath{\displaystyle}
+
+\makeatother
+
+\begin{document}
+
+\title{\textbf{植物科学导论复习提纲}}
+\author{Fangmaoer}
+\date{学期：2019年秋\qquad 授课老师：谢道昕、张大鹏}
+\maketitle
+\tableofcontents{}
+
+% \thispagestyle{empty}
+
+\mainmatter
+\hypersetup{pageanchor=true}
+
+\input{chapter/ch01植物与植物科学.tex}
+\input{chapter/ch02植物与环境.tex}
+\input{chapter/ch03植物基因工程.tex}
+\input{chapter/ch04植物细胞.tex}
+\input{chapter/ch05呼吸代谢和能量转换.tex}
+\input{chapter/ch06植物水分关系.tex}
+\input{chapter/ch07植物的矿质营养.tex}
+\input{chapter/ch08韧皮部运输与同化物分配.tex}
+\input{chapter/ch09植物的生长发育.tex}
+\input{chapter/ch10光周期与开花.tex}
+\input{chapter/ch11植物激素.tex}
+
+\end{document}
